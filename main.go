@@ -9,8 +9,7 @@
 // guarantee.
 //
 // This is currently a build-only skeleton (Phase 0 of the implementation
-// plan, plans/go-code/2026-07-06-verify-environment-phase1-implementation.md
-// in the deploy-config deploy repo). The HTTP API, auth, and job execution
+// plan in the operator's deployment repository). The HTTP API, auth, and job execution
 // land in Phase 1 onward.
 package main
 

@@ -35,10 +35,8 @@ for the complete design and its three-round security review.
 
 ## Status
 
-Build-only skeleton (implementation Phase 0 of
-`plans/go-code/2026-07-06-verify-environment-phase1-implementation.md` in the
-operator's deploy repo). The HTTP API, sandboxing, and job execution land in
-later phases.
+Build-only skeleton (implementation Phase 0 of the operator's deployment
+plan). The HTTP API, sandboxing, and job execution land in later phases.
 
 ## Build
 

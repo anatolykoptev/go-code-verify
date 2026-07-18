@@ -69,13 +69,12 @@ No CGO, no database — `GOWORK=off CGO_ENABLED=0 go build -o bin/go-code-verify
 
 ## CI
 
-Self-hosted runner `krolik-go-code-verify` (separate from go-code's own
+Self-hosted runner `host-a-go-code-verify` (separate from go-code's own
 runner — `.github/workflows/preflight.yml`), gate = `make preflight`. No
 ephemeral-postgres step: this service has no database.
 
 ## Deploy
 
 See `~/deploy/server-config/CLAUDE.md` for the compose stack this service is
-part of, and
-`~/deploy/server-config/plans/go-code/2026-07-06-verify-environment-phase1-implementation.md`
-for the phased build-out this repo is Phase 0 of.
+part of, and the operator's deployment plan for the phased build-out this
+repo is Phase 0 of.
