@@ -17,7 +17,7 @@ Source of design: `github.com/anatolykoptev/go-code`
   other service, no host-published port.
 - Auth: `Authorization: Bearer <token>` where `<token>` is
   `GOCODE_VERIFY_TOKEN` (≥32 bytes, CSPRNG-generated, provisioned via
-  `~/deploy/krolik-server/.env`). Verified with `crypto/subtle.
+  `~/deploy/server-config/.env`). Verified with `crypto/subtle.
   ConstantTimeCompare` over fixed-length SHA-256 digests. Mismatch or
   missing header → `401`, no body detail.
 - Body: JSON, decoded with `encoding/json`'s `Decoder.DisallowUnknownFields`

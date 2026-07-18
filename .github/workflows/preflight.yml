@@ -2,8 +2,8 @@ name: preflight
 
 # Pre-merge build/test gate. Runs on GitHub-hosted `ubuntu-24.04-arm` — free
 # unlimited minutes for public repos, and arm64 matches the ARM prod box.
-# Moved off the self-hosted krolik runner 2026-07-14. The old dedicated
-# runner (krolik-go-code-verify) was registered but had no systemd unit, so
+# Moved off the self-hosted host-a runner 2026-07-14. The old dedicated
+# runner (host-a-go-code-verify) was registered but had no systemd unit, so
 # every PR run queued forever against an offline runner — this migration
 # also simply un-breaks CI here. GitHub-hosted runners sandbox fork PRs in
 # throwaway VMs, so the old same-repo guard is gone with the runner.

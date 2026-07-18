@@ -1,6 +1,6 @@
 BINARY  = bin/go-code-verify
 SERVICE = go-code-verify
-COMPOSE = cd $(HOME)/deploy/krolik-server && docker compose
+COMPOSE = cd $(HOME)/deploy/server-config && docker compose
 
 GOSTALL_VERSION := v1.0.0
 GOSTALL := $(shell command -v gostall 2>/dev/null || echo $$(go env GOPATH)/bin/gostall)
@@ -43,7 +43,7 @@ govulncheck:
 
 # preflight — the merge gate: gofmt + vet + build + test + govulncheck, run
 # from .github/workflows/preflight.yml on a dedicated self-hosted runner
-# (krolik-go-code-verify — NOT shared with go-code's runner, matching the
+# (host-a-go-code-verify — NOT shared with go-code's runner, matching the
 # repo-level isolation this whole service exists for). Unlike go-code's
 # preflight, there is no ephemeral-postgres step: this service has no
 # database (a concrete proof of its smaller footprint, ADR 0002 decision D0).
